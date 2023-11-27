@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="contact-form.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="open-sidebar" id="open-sidebar">
+      <button id="open-sidebar-btn" onclick="openSidebar()">
+        <img src="icons/sidebar-show.svg" class="dark-theme" />
+      </button>
+    </div>
+    <div class="sidebar-container" id="sidebar-container">
+      <div class="hide-sidebar" id="hide-sidebar">
+        <button id="hide-sidebar-btn" onclick="closeSidebar()">
+          <img src="icons/sidebar-hide.svg" class="dark-theme" />
+        </button>
+      </div>
+      <div class="sidebar-elements">
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="index.html"
+            ><img src="icons/about-dark.svg" class="dark-theme"
+          /></a>
+          <a href="index.html"><div>HOME</div></a>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="about.html"
+            ><img src="icons/about-dark.svg" class="dark-theme"
+          /></a>
+          <a href="about.html"><div>ABOUT</div></a>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="projects.html"
+            ><img src="icons/projects.svg" class="dark-theme"
+          /></a>
+          <a href="projects.html"><div>PROJECTS</div></a>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <img src="icons/resume.svg" class="dark-theme" />
+          <div>RESUME</div>
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="https://github.com/Masoud-M" target="_blank"
+            ><img src="icons/github-dark.svg" class="dark-theme"
+          /></a>
+          <a href="https://github.com/Masoud-M" target="_blank"
+            ><div>GITHUB</div></a
+          >
+        </div>
+        <div class="sidebar-link" id="sidebar-link">
+          <a href="contact-form.html">
+            <img src="icons/contact.svg" class="dark-theme" />
+          </a>
+          <a href="contact-form.html"><div>CONTACT</div></a>
+        </div>
+      </div>
+    </div>
+    <!-- Contact form -->
+
+    <div class="auto-text-container-top">
+      <p class="tags">&lt;&nbsp;div&nbsp;&gt; <br /></p>
+      <p class="tags">&emsp;&lt;&nbsp;h1&nbsp;&gt; <br /></p>
+      <p class="auto-text">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="auto-type"></span>
+      </p>
+      <br />
+      <p class="tags">&emsp;&lt;&#47;&nbsp;h1&nbsp;&gt; <br /></p>
+      <p class="tags">&emsp;&lt;&nbsp;input&nbsp;&gt; <br /></p>
+    </div>
+
+    <div class="contact-container-main" id="contact-container">
+      <div class="contact-container-sub" id="contact-container-sub">
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/0ef05d8377e88b95981713f6e57bee10"
+          method="POST"
+        >
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Disable captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <!-- Success message -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://masoud-m.github.io/Portfolio/success.html"
+          />
+
+          <div class="name-email-container">
+            <input
+              type="text"
+              id="name-input"
+              class="name-input"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              id="email-input"
+              class="email-input"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <textarea
+            id="message-input"
+            class="message-input"
+            name="message"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+
+    <div class="auto-text-container-bottom">
+      <p class="tags">&emsp;&lt;&#47;&nbsp;input&nbsp;&gt; <br /></p>
+      <p class="tags">&lt;&#47;&nbsp;div&nbsp;&gt; <br /></p>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Contact me"],
+        typeSpeed: 100,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

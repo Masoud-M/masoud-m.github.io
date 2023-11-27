@@ -1,0 +1,17 @@
+.about-container {
+  display: flex;
+  justify-content: left;
+  margin-left: 120px;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.about-container .tags {
+  color: rgb(202, 202, 202);
+  font-size: 26px;
+}
+
+.about-container span {
+  color: orange;
+  font-size: 26px;
+}

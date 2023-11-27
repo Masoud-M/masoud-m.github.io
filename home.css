@@ -1,0 +1,17 @@
+.home-container {
+  display: flex;
+  justify-content: left;
+  margin-left: 120px;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home-container .tags {
+  color: rgb(202, 202, 202);
+  font-size: 26px;
+}
+
+.home-container span {
+  color: orange;
+  font-size: 26px;
+}
